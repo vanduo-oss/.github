@@ -1,39 +1,13 @@
 <div align="center">
 
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 160" width="860" height="160">
-  <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#0d1117"/>
-      <stop offset="100%" stop-color="#0a1628"/>
-    </linearGradient>
-    <linearGradient id="wave1" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#1a8fe3" stop-opacity="0.5"/>
-      <stop offset="100%" stop-color="#0d4fa8" stop-opacity="0.1"/>
-    </linearGradient>
-    <linearGradient id="wave2" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#29d4f5" stop-opacity="0.3"/>
-      <stop offset="100%" stop-color="#1a8fe3" stop-opacity="0.05"/>
-    </linearGradient>
-  </defs>
-  <rect width="860" height="160" rx="12" fill="url(#bg)"/>
-  <path d="M0 110 C120 85, 240 135, 360 105 S600 75, 860 100 L860 160 L0 160 Z" fill="url(#wave1)"/>
-  <path d="M0 125 C100 100, 220 145, 340 118 S580 90, 860 115 L860 160 L0 160 Z" fill="url(#wave2)"/>
-  <circle cx="62" cy="68" r="28" fill="none" stroke="#29d4f5" stroke-width="2.5" opacity="0.7"/>
-  <path d="M62 44 C62 44, 48 58, 48 68 C48 76, 54 84, 62 84 C70 84, 76 76, 76 68 C76 58, 62 44, 62 44 Z" fill="#1a8fe3" opacity="0.85"/>
-  <path d="M62 52 C62 52, 54 62, 54 68 C54 73, 57.5 78, 62 78 C66.5 78, 70 73, 70 68 C70 62, 62 52, 62 52 Z" fill="#29d4f5" opacity="0.9"/>
-  <text x="108" y="78" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="36" font-weight="700" fill="#e6edf3" letter-spacing="1">Vanduo</text>
-  <text x="110" y="104" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif" font-size="14" fill="#8b949e" letter-spacing="0.5">Open Source Foundation</text>
-  <text x="620" y="72" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" fill="#29d4f5" opacity="0.8">vanduo.dev</text>
-  <line x1="600" y1="78" x2="840" y2="78" stroke="#29d4f5" stroke-width="0.5" opacity="0.3"/>
-  <text x="620" y="95" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif" font-size="11" fill="#8b949e">TypeScript · Framework · Docs</text>
-</svg>
+<img src="https://raw.githubusercontent.com/vanduo-oss/.github/main/profile/banner.svg" alt="Vanduo Open Source Foundation" width="860"/>
 
 </div>
 
 ## About
 
 **Vanduo** is an open-source foundation building developer-focused tools and frameworks.
-Our mission: clean abstractions, great DX, and transparent development.
+
 
 ## Projects
 
@@ -43,7 +17,7 @@ Our mission: clean abstractions, great DX, and transparent development.
 | [docs](https://github.com/vanduo-oss/docs) | Documentation site |
 | [flowchart](https://github.com/vanduo-oss/flowchart) | Flowchart utilities |
 | [charts](https://github.com/vanduo-oss/charts) | Chart components |
-| [labs](https://github.com/vanduo-oss/labs) | Experimental projects |
+| [hex-grid](https://github.com/vanduo-oss/hex-grid) | Hexagonal grid component |
 
 ## Connect
 
