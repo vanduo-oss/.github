@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="100%" height="100%">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Silkscreen&amp;display=swap');
+      .zen-text {
+        font-family: 'Silkscreen', monospace, sans-serif;
+      }
+    </style>
+
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0f1322" />
+      <stop offset="100%" stop-color="#171f35" />
+    </linearGradient>
+
+    <linearGradient id="waveFront" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1aa3ea" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#084b82" stop-opacity="1"/>
+    </linearGradient>
+    <linearGradient id="waveMid" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1679ba" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#0b3d68" stop-opacity="0.85"/>
+    </linearGradient>
+    <linearGradient id="waveBack" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#114b7c" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#072440" stop-opacity="0.7"/>
+    </linearGradient>
+
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="12" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <rect width="100%" height="100%" fill="url(#bgGrad)" />
+
+  <g fill="#a1b3d1">
+    <circle cx="150" cy="80" r="1.5">
+      <animate attributeName="opacity" values="0.1; 0.8; 0.1" dur="4s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="680" cy="110" r="2">
+      <animate attributeName="opacity" values="0.2; 1; 0.2" dur="3s" begin="1s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="250" cy="180" r="1">
+      <animate attributeName="opacity" values="0.1; 0.6; 0.1" dur="5s" begin="2s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="600" cy="70" r="1.5">
+      <animate attributeName="opacity" values="0.2; 0.9; 0.2" dur="3.5s" begin="0.5s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="100" cy="220" r="2">
+      <animate attributeName="opacity" values="0.1; 0.7; 0.1" dur="4.5s" begin="1.5s" repeatCount="indefinite" />
+    </circle>
+  </g>
+
+  <g transform="translate(400, 115)">
+    <circle cx="0" cy="0" r="60" fill="#003399" filter="url(#glow)" opacity="0.4">
+      <animate attributeName="opacity" values="0.2; 0.5; 0.2" dur="4s" repeatCount="indefinite" />
+    </circle>
+
+    <g>
+      <animateTransform 
+        attributeName="transform" 
+        type="rotate" 
+        from="0" 
+        to="360" 
+        dur="8s"
+        calcMode="spline"
+        keyTimes="0;0.33;0.66;1"
+        keySplines="0.05,0.05,0.3,0.95; 0.7,0.05,0.95,0.05; 0.05,0.05,0.3,0.95"
+        repeatCount="indefinite" />
+      
+      <g transform="translate(-64.35, -64.35) scale(0.26)">
+        <circle cx="247.5" cy="247.5" r="230.5" stroke="#003399" stroke-width="34" fill="none"/>
+        <path d="M135.327 283H135.326L114.008 249.021L114.007 249.019L135.327 283ZM167.323 140.75C134.941 165.109 113.999 203.859 113.999 247.5C113.999 248.007 114.002 248.513 114.007 249.019L105.652 235.699C79.7469 194.408 109.427 140.75 158.171 140.75H167.323Z" fill="#FDB913"/>
+        <circle cx="247.5" cy="247.5" r="133" fill="#003399"/>
+        <path d="M335.829 140.75C384.573 140.75 414.253 194.408 388.349 235.699L358.046 284H358.045L380.999 247.413C380.971 203.807 360.037 165.093 327.677 140.75H335.829Z" fill="#006A44"/>
+        <path d="M299.521 377.287C275.22 416.021 218.781 416.021 194.48 377.287L188.074 367.076C205.971 375.987 226.15 381 247.5 381C268.277 381 287.946 376.253 305.48 367.785L329.813 329H329.814L299.521 377.287Z" fill="#C1272D"/>
+      </g>
+    </g>
+  </g>
+
+  <text x="400" y="230" class="zen-text" font-weight="900" font-size="36" fill="url(#waveFront)" text-anchor="middle" letter-spacing="5">VANDUO</text>
+  <text x="400" y="260" class="zen-text" font-weight="700" font-size="13" fill="url(#waveMid)" text-anchor="middle" letter-spacing="14">FRAMEWORK</text>
+
+  <g transform="translate(0, 240)">
+    <g fill="url(#waveBack)">
+      <path d="M 0 40 C 150 15, 250 65, 400 40 C 550 15, 650 65, 800 40 C 950 15, 1050 65, 1200 40 C 1350 15, 1450 65, 1600 40 L 1600 160 L 0 160 Z" />
+      <animateTransform attributeName="transform" type="translate" from="0,0" to="-800,0" dur="18s" repeatCount="indefinite" />
+    </g>
+
+    <g fill="url(#waveMid)">
+      <path d="M 0 50 C 200 85, 200 15, 400 50 C 600 85, 600 15, 800 50 C 1000 85, 1000 15, 1200 50 C 1400 85, 1400 15, 1600 50 L 1600 160 L 0 160 Z" />
+      <animateTransform attributeName="transform" type="translate" from="-800,0" to="0,0" dur="12s" repeatCount="indefinite" />
+    </g>
+
+    <g fill="url(#waveFront)">
+      <path d="M 0 60 C 180 30, 220 90, 400 60 C 580 30, 620 90, 800 60 C 980 30, 1020 90, 1200 60 C 1380 30, 1420 90, 1600 60 L 1600 160 L 0 160 Z" />
+      <animateTransform attributeName="transform" type="translate" from="0,0" to="-800,0" dur="8s" repeatCount="indefinite" />
+    </g>
+  </g>
+</svg>
