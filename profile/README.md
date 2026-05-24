@@ -1,6 +1,5 @@
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/vanduo-oss/.github/main/profile/banner.svg" alt="Vanduo Open Source Foundation" width="860"/>
 
 </div>
 
