@@ -16,6 +16,8 @@
 | [flowchart](https://github.com/vanduo-oss/flowchart) | Flowchart utilities |
 | [charts](https://github.com/vanduo-oss/charts) | Chart components |
 | [hex-grid](https://github.com/vanduo-oss/hex-grid) | Hexagonal grid component |
+| [music-player](https://github.com/vanduo-oss/music-player) | HTML5 Music Player Component |
+
 
 ## Connect
 
