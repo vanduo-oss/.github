@@ -4,14 +4,15 @@
 
 ## About
 
-**Vanduo** is an open-source foundation building a developer-focused design system. It comes in two independently maintained lines:
+**Vanduo** is an open-source foundation building a developer-focused design system, shipped as **perspective** — a standalone **Vue 3** design system with typed components and design tokens in a single package.
 
-- **perspective** — the current line: a standalone **Vue 3** design system, with typed components and design tokens in a single package.
-- **legacy** — the original dual-engine system: a zero-build **Vanilla** CSS/JS framework and first-class **Vue 3** components on one shared set of design tokens.
+The original **legacy** line (a dual-engine Vanilla CSS/JS + Vue 3 system) was **retired on 2026-07-25**. Its repositories are archived, its packages are deprecated on npm but remain installable, and its documentation stays online as a frozen reference. Nothing built on it breaks — it simply receives no further releases. See [legacy](#legacy--retired-2026-07-25) below.
 
 ## Projects
 
 ### perspective — the standalone Vue 3 line
+
+> The only line under active development.
 
 Typed components, a composable for every interaction, and design tokens in a single package. No runtime, no ceremony.
 
@@ -21,20 +22,22 @@ Typed components, a composable for every interaction, and design tokens in a sin
 | [vd3-cbun](https://github.com/vanduo-oss/vd3-cbun) | [![npm](https://img.shields.io/npm/v/@vanduo-oss/vd3-cbun)](https://www.npmjs.com/package/@vanduo-oss/vd3-cbun) | Companion component bundle — charts, flowchart, hex-grid, and music-player as tree-shakeable Vue 3 subpath exports. |
 | [vd3-docs](https://github.com/vanduo-oss/vd3-docs) | — | Documentation and live demos → [vanduo-oss.github.io/vd3-docs](https://vanduo-oss.github.io/vd3-docs/) |
 
-### legacy — the dual-engine (Vanilla + Vue 3) system
+### legacy — retired 2026-07-25
 
-The original Vanduo: a zero-build Vanilla CSS/JS framework and first-class Vue 3 components, both driven by one framework-agnostic set of design tokens in [`core`](https://github.com/vanduo-oss/core).
+The original Vanduo: a zero-build Vanilla CSS/JS framework and first-class Vue 3 components on one framework-agnostic set of design tokens. **Archived and no longer developed.** Every package below stays published on npm at its final version and keeps working — retirement stopped development, not access.
 
-| Repository | npm | Description |
+**Migrating?** The [migration guide](https://vanduo-oss.github.io/vd3-docs/guides/migration) maps the old packages onto vd3. The short version: `vue` → `vd3`, the four add-ons → `vd3-cbun` subpaths, `core`'s tokens → inside `vd3`. **`framework` has no successor** — vd3 is Vue 3 only, so if you need a build-free drop-in, pin `@vanduo-oss/framework@1.7.1`.
+
+| Repository | Final | Successor |
 |---|---|---|
-| [core](https://github.com/vanduo-oss/core) | [![npm](https://img.shields.io/npm/v/@vanduo-oss/core)](https://www.npmjs.com/package/@vanduo-oss/core) | Design-system source of truth — framework-agnostic design tokens (DTCG) shared by both engines. |
-| [framework](https://github.com/vanduo-oss/framework) | [![npm](https://img.shields.io/npm/v/@vanduo-oss/framework)](https://www.npmjs.com/package/@vanduo-oss/framework) | Zero-dependency Vanilla CSS/JS engine — a Fibonacci / Golden-Ratio system with Open Color. |
-| [vue](https://github.com/vanduo-oss/vue) | [![npm](https://img.shields.io/npm/v/@vanduo-oss/vue)](https://www.npmjs.com/package/@vanduo-oss/vue) | First-class Vue 3 components and composables for the Vanduo design system. |
-| [charts](https://github.com/vanduo-oss/charts) | [![npm](https://img.shields.io/npm/v/@vanduo-oss/charts)](https://www.npmjs.com/package/@vanduo-oss/charts) | SVG-first chart components for dashboards and docs. |
-| [flowchart](https://github.com/vanduo-oss/flowchart) | [![npm](https://img.shields.io/npm/v/@vanduo-oss/flowchart)](https://www.npmjs.com/package/@vanduo-oss/flowchart) | SVG flowchart editor for diagrams and documentation. |
-| [hex-grid](https://github.com/vanduo-oss/hex-grid) | [![npm](https://img.shields.io/npm/v/@vanduo-oss/hex-grid)](https://www.npmjs.com/package/@vanduo-oss/hex-grid) | Canvas-based hex grids (`VdHexGrid`). |
-| [music-player](https://github.com/vanduo-oss/music-player) | [![npm](https://img.shields.io/npm/v/@vanduo-oss/music-player)](https://www.npmjs.com/package/@vanduo-oss/music-player) | HTML5 audio player for apps and docs. |
-| [vd2](https://github.com/vanduo-oss/vd2) | — | Documentation and live demos → [vanduo-oss.github.io/vd2](https://vanduo-oss.github.io/vd2/) |
+| [core](https://github.com/vanduo-oss/core) | `1.0.1` | tokens ship inside [`@vanduo-oss/vd3`](https://www.npmjs.com/package/@vanduo-oss/vd3) (`/css/core`, `/tokens.json`) |
+| [framework](https://github.com/vanduo-oss/framework) | `1.7.1` | **none** — Vue 3 only from here; pin `1.7.1` for the vanilla engine |
+| [vue](https://github.com/vanduo-oss/vue) | `0.3.1` | [`@vanduo-oss/vd3`](https://www.npmjs.com/package/@vanduo-oss/vd3) — closest to a drop-in |
+| [charts](https://github.com/vanduo-oss/charts) | `0.2.0` | `@vanduo-oss/vd3-cbun/charts` |
+| [flowchart](https://github.com/vanduo-oss/flowchart) | `1.1.0` | `@vanduo-oss/vd3-cbun/flowchart` |
+| [hex-grid](https://github.com/vanduo-oss/hex-grid) | `1.1.0` | `@vanduo-oss/vd3-cbun/hex-grid` |
+| [music-player](https://github.com/vanduo-oss/music-player) | `1.1.0` | `@vanduo-oss/vd3-cbun/music-player` |
+| [vd2](https://github.com/vanduo-oss/vd2) | — | frozen docs, still online → [vanduo-oss.github.io/vd2](https://vanduo-oss.github.io/vd2/) |
 
 ## Connect
 
