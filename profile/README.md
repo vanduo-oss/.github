@@ -6,7 +6,7 @@
 
 **Vanduo** is an open-source foundation building a developer-focused design system, shipped as **perspective** — a standalone **Vue 3** design system with typed components and design tokens in a single package.
 
-The original **legacy** line (a dual-engine Vanilla CSS/JS + Vue 3 system) was **retired on 2026-07-25**. Its repositories are archived, its packages are deprecated on npm but remain installable, and its documentation stays online as a frozen reference. Nothing built on it breaks — it simply receives no further releases. See [legacy](#legacy--retired-2026-07-25) below.
+The original **legacy** line (a dual-engine Vanilla CSS/JS + Vue 3 system) was **retired on 2026-07-25**. Its repositories are archived and its documentation site is offline, but its packages remain published and installable on npm — deprecated, not removed. Nothing built on it breaks; it simply receives no further releases. See [legacy](#legacy--retired-2026-07-25) below.
 
 ## Projects
 
@@ -37,7 +37,7 @@ The original Vanduo: a zero-build Vanilla CSS/JS framework and first-class Vue 3
 | [flowchart](https://github.com/vanduo-oss/flowchart) | `1.1.0` | `@vanduo-oss/vd3-cbun/flowchart` |
 | [hex-grid](https://github.com/vanduo-oss/hex-grid) | `1.1.0` | `@vanduo-oss/vd3-cbun/hex-grid` |
 | [music-player](https://github.com/vanduo-oss/music-player) | `1.1.0` | `@vanduo-oss/vd3-cbun/music-player` |
-| [vd2](https://github.com/vanduo-oss/vd2) | — | frozen docs, still online → [vanduo-oss.github.io/vd2](https://vanduo-oss.github.io/vd2/) |
+| [vd2](https://github.com/vanduo-oss/vd2) | — | the legacy docs site — taken offline; source archived in the repo. Current docs: [vd3-docs](https://vanduo-oss.github.io/vd3-docs/) |
 
 ## Connect
 
