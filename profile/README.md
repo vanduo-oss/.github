@@ -2,15 +2,9 @@
   <img src="https://raw.githubusercontent.com/vanduo-oss/.github/main/profile/vanduo-oss-animated.svg" alt="Vanduo OSS" width="220"/>
 </div>
 
-## About
-
-**Vanduo** is open-source software under [@vanduo-oss](https://www.npmjs.com/org/vanduo-oss): a **Vue 3** design system (**perspective**) and lightweight **web-AI** building blocks (**labs**) for semantic search, small on-device LLM tools, and related helpers that fit a web-oriented stack.
-
-**npm keep list:** only `@vanduo-oss/vd3`, `@vanduo-oss/vd3-charts`, and `@vanduo-oss/vd3-flowchart`. Everything else under the scope is GitHub / `link:` siblings — not on the registry.
-
 ## Projects
 
-### perspective — Vue 3 design system
+### vd3 UI — a Vue 3 design system & components library
 
 Typed `Vd*` components, composables, and `--vd-*` design tokens. Peer dependency: `vue`.
 
